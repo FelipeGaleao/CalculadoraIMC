@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     imc_classificacao.setText("Muito abaixo do peso");
                     imc_consequencia.setText("Queda de cabelo, infertilidade, ausência menstrual");
                     imc_classificacao.setTextColor(Color.rgb(200, 0, 0));
+                    imc_classificacao.setBackgroundColor(Color.rgb(200, 200,200));
                 }
 
                 }catch(Exception e){
