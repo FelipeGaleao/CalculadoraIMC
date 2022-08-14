@@ -47,7 +47,42 @@ public class MainActivity extends AppCompatActivity {
                     imc_classificacao.setTextColor(Color.rgb(200, 0, 0));
                     imc_classificacao.setBackgroundColor(Color.rgb(200, 200,200));
                 }
-
+                else if(imc > 17 && imc < 18.4){
+                    imc_classificacao.setText("Abaixo do peso");
+                    imc_consequencia.setText("Fadiga, stress e ansiedade");
+                    imc_classificacao.setTextColor(Color.rgb(200, 0, 0));
+                    imc_classificacao.setBackgroundColor(Color.rgb(200, 200,200));
+                }
+                else if(imc > 18.5 && imc < 24.9){
+                    imc_classificacao.setText("Peso normal");
+                    imc_consequencia.setText("Menor risco de doenças cardíacas e vasculares");
+                    imc_classificacao.setTextColor(Color.rgb(0, 200, 0));
+                    imc_classificacao.setBackgroundColor(Color.rgb(200, 200,200));
+                }
+                else if(imc > 25 && imc < 29.9){
+                    imc_classificacao.setText("Acima do peso");
+                    imc_consequencia.setText("Fadiga, má circulação e varizes");
+                    imc_classificacao.setTextColor(Color.rgb(200, 0, 0));
+                    imc_classificacao.setBackgroundColor(Color.rgb(200, 200,200));
+                }
+                else if(imc > 30 && imc < 34.9){
+                    imc_classificacao.setText("Obesidade Grau I");
+                    imc_consequencia.setText("Diabetes, Infarto");
+                    imc_classificacao.setTextColor(Color.rgb(200, 0, 0));
+                    imc_classificacao.setBackgroundColor(Color.rgb(200, 200,200));
+                }
+                else if(imc > 35 && imc < 40) {
+                    imc_classificacao.setText("Obesidade Grau II");
+                    imc_consequencia.setText("Apnéia do sono e faltas de ar");
+                    imc_classificacao.setTextColor(Color.rgb(200, 0, 0));
+                    imc_classificacao.setBackgroundColor(Color.rgb(200, 200, 200));
+                }
+                else if(imc > 40){
+                    imc_classificacao.setText("Obesidade Grau II");
+                    imc_consequencia.setText("Refluxo, dificuldade para se mover, infarto, AVC e diabetes");
+                    imc_classificacao.setTextColor(Color.rgb(200, 0, 0));
+                    imc_classificacao.setBackgroundColor(Color.rgb(200, 200,200));
+                }
                 }catch(Exception e){
                     AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
                     dialog.setMessage("Insira as informações corretamente. \n " + e);

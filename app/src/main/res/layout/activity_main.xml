@@ -39,6 +39,7 @@
             android:hint="Insira sua altura"
             android:inputType="numberDecimal"
             android:minHeight="48dp"
+            android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF" />
 
         <EditText
@@ -49,6 +50,7 @@
             android:hint="Insira o seu peso"
             android:inputType="numberDecimal"
             android:minHeight="48dp"
+            android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF" />
 
         <Button
@@ -65,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-black"
-            android:text="Seu resultado"
+            android:text="Seu resultado \n IMC"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="34sp" />
@@ -76,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-black"
-            android:text="Seu resultado"
+            android:text="Classificação"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="34sp" />
@@ -86,10 +88,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:fontFamily="sans-serif-black"
-            android:text="Seu resultado"
+            android:fontFamily="serif"
+            android:text="Consequências"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="34sp" />
+            android:textSize="14sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
